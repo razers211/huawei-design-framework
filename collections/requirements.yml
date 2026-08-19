@@ -3,4 +3,4 @@ collections:
   - name: netbox.netbox
   - name: community.network
   - name: ansible.netcommon
-  - name: huawei.vrp
+  - name: huaweicc.ce
