@@ -1,0 +1,11 @@
+plugin: netbox.netbox.nb_inventory
+api_endpoint: "http://10.72.0.97:8000"
+token: "Bearer nbt_V1zoYqXZfn3S.DzHuF4pLxFsNiQKAwyMa8Zsrri4dUklqFryrERvy"
+validate_certs: false
+config_context: true
+query_filters:
+  - status: active
+compose:
+  ansible_host: primary_ip4.address.split('/')[0]
+  ansible_network_os: "'community.network.ce'"
+  ansible_connection: "'ansible.netcommon.network_cli'"
