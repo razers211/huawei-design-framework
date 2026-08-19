@@ -1,6 +1,9 @@
 ---
 - name: Push Config from NetBox to Huawei
   hosts: all
+  connection: ansible.netcommon.network_cli
+  vars:
+    ansible_network_os: community.network.ce
   gather_facts: false
   tasks:
     - name: Push simple configuration
