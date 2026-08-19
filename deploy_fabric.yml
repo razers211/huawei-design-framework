@@ -3,7 +3,7 @@
   hosts: all
   connection: ansible.netcommon.network_cli
   vars:
-    ansible_network_os: community.network.ce
+    ansible_network_os: huawei.vrp.vrp
   gather_facts: false
   tasks:
     - name: Push simple configuration
