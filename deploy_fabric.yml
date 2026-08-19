@@ -7,7 +7,7 @@
   gather_facts: false
   tasks:
     - name: Push simple configuration
-      ansible.netcommon.cli_config:
-        config: |
-          sysname {{ inventory_hostname }}
-          vlan batch 15 16
+      huawei.vrp.vrp_config:
+        lines:
+         - sysname {{ inventory_hostname }}
+         - vlan batch 15 16
